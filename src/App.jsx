@@ -1,32 +1,10 @@
 import './App.css'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import List from './components/List'
-import Images from './components/Images'
-import Form from './components/Form'
+import Home from './pages/Home'
 
 function App() {
   return (
     <>
-      {/* Cabeçalho */}
-      {/* Esse é o jeito certo de colocar */}
-      <Header />
-
-      <List titulo="Btata" exibirPrimeiraLista={true}/>
-      <List titulo="Aipim" />
-
-      {/* Conteúdo da página */}
-      <main>
-        {/* Listas */}
-        <List />
-        {/* Imagens e Videos */}
-        <Images />
-        {/* Form */}
-        <Form />
-      </main>
-
-      {/* Rodapé */}
-      <Footer />
+      <Home />
     </>
   )
 }

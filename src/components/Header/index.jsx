@@ -1,9 +1,18 @@
 import './style.css'
 
-function Header() {
+function Header({ titulo }) {
   return (
     <header>
-      <h1>Minha primeira página em React</h1>
+      <h1>{ titulo ? 'passou algo' : 'não passou algo' }</h1>
+
+      {/* Outra forma de colocar */}
+      {/* <h1>
+        { 
+        titulo 
+            ? 'passou algo'
+            : 'não passou algo'
+         }
+      </h1> */}
     </header>
   )
 }
