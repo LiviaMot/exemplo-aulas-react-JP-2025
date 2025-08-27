@@ -1,0 +1,7 @@
+h2, h3 {
+  color: black;
+}
+
+ul > li, ol > li {
+  color: black;
+}
