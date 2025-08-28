@@ -1,18 +1,16 @@
 import './style.css'
-import Header from '../../components/Header'
-import Footer from '../../components/Footer'
+import { Link } from 'react-router-dom'
 
 function Home() {
   return (
     <>
-      <Header />
-      <Header titulo={"Página sobre nós"} />
-
       <main>
         Meu conteúdo Batata
-      </main>
 
-      <Footer />
+        <Link to='/about'>
+          <button type="button">Navegar para Sobre</button>
+        </Link>
+      </main>
     </>
   )
 }
